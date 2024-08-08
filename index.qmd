@@ -1,5 +1,5 @@
 ---
-title: "blog"
+title: "Daniel presenta Diversión con Datos"
 listing:
   contents: posts
   sort: "date desc"
