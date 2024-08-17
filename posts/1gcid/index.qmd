@@ -213,7 +213,7 @@ A partir de aquí la asignatura empieza a dar un poco de miedo pues empezamos co
 
 $$
 \begin{split}
-\iint_{D = \{ (x, y) \in \mathbb{R}^2 : 2 \leq x \leq 4; 3 \leq y \leq 6 \}} c \, dA = \int_3^6 \int_2^4 c \, dxdy \\ = c \int_3^6 \int_2^4 dxdy \\ = C·A(D) \\ = c (3 · 2) = 6c
+\iint_{D = \{ (x, y) \in \mathbb{R}^2 : 2 \leq x \leq 4; 3 \leq y \leq 6 \}} c \, dA = \int_3^6 \int_2^4 c \, dxdy \\ = c \int_3^6 \int_2^4 dxdy \\ = c·A(D) \\ = c (3 · 2) = 6c
 \end{split}
 $$
 
