@@ -17,6 +17,7 @@ website:
         href: https://github.com/DanielDCD
   back-to-top-navigation: true
   reader-mode: true
+  draft-mode: unlinked
 format:
   html:
     theme:
