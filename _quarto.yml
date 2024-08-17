@@ -5,6 +5,10 @@ execute:
   freeze: auto
 
 website:
+  announcement: 
+    content: "Página aún en construcción" 
+    position: above-navbar
+    type: warning
   title: "Daniel presenta Diversión con Datos"
   navbar:
     right:
