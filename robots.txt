@@ -1,1 +1,1 @@
-Sitemap: git@github-personal:DanielDCD/DanielDCD.github.io.git/sitemap.xml
+Sitemap: https://DanielDCD.github.io/sitemap.xml
