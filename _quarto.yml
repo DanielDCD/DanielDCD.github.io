@@ -21,7 +21,9 @@ website:
   comments:
     giscus:
       repo: DanielDCD/DanielDCD.github.io
+      repo-id: R_kgDOMkuSrg
       category: Giscus Comments
+      category-id: DIC_kwDOMkuSrs4CiJXW
       mapping: title
       reactions-enabled: true
       loading: lazy
