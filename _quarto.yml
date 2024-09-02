@@ -18,6 +18,14 @@ website:
   back-to-top-navigation: true
   reader-mode: true
   draft-mode: unlinked
+  comments:
+    giscus:
+      repo: DanielDCD/DanielDCD.github.io
+      category: Giscus Comments
+      mapping: title
+      reactions-enabled: true
+      loading: lazy
+
 format:
   html:
     theme:
