@@ -1,0 +1,10 @@
+---
+title: "Post de prueba"
+author: "Daniel"
+categories: []
+lang: es-ES
+toc: true
+format:
+  html:
+    reference-location: margin
+---
