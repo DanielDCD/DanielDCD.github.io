@@ -18,15 +18,6 @@ website:
   back-to-top-navigation: true
   reader-mode: true
   draft-mode: unlinked
-  comments:
-    giscus:
-      repo: DanielDCD/DanielDCD.github.io
-      repo-id: R_kgDOMkuSrg
-      category: Giscus Comments
-      category-id: DIC_kwDOMkuSrs4CiJXW
-      mapping: title
-      reactions-enabled: true
-      loading: lazy
 
 format:
   html:
@@ -34,6 +25,3 @@ format:
       light: flatly
       dark: darkly
     css: styles.css
-
-
-
