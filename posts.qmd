@@ -13,3 +13,6 @@ title-block-banner: true
 lang: es
 ---
 
+Por si le resulta más cómodo, puede [visualizar](posts-table.qmd) esta lista de *posts* como una tabla sólo con la fecha y el título.
+
+---
