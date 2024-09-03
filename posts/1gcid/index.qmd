@@ -20,7 +20,7 @@ Mi motivación es que antes de decidirme por esta carrera, yo estaba pensando en
 
 Además, en nuestro caso la metodología fue bastante innovadora pues el grado es semipresencial, es decir, que sólo íbamos unas pocas horas por la tarde a clase, dando la mitad del contenido de forma *online* en forma de vídeos. A todo esto hay que sumarle la oportunidad de realizar prácticas en empresa desde el primer año.
 
-El plan de estudios del grado se muestra en la @fig-plan-estudios. En este artículo vamos a comentar las asignaturas del primer curso. En este año no empezamos con la ciencia de datos propiamente dicha, por lo que muchas de las asignaturas son comunes con Informática.
+El plan de estudios del grado se muestra en la @fig-plan-estudios. En este artículo vamos a comentar las asignaturas del primer curso. En este año no empezamos con la ciencia de datos propiamente dicha, por lo que muchas de las asignaturas son comunes con Informática. De hecho, este grado es en esencia una mezcla entre Informática, Estadística y una pequeña pizca de Telecomunicaciones.
 
 ![Plan de estudios.](plan-estudios.jpeg){#fig-plan-estudios fig-alt="Plan de estudios del grado en Ciencia e Ingeniería de Datos."}
 
