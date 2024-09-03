@@ -4,5 +4,17 @@
     "items": [
       "/posts/1gcid/index.html"
     ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/1gcid/index.html"
+    ]
+  },
+  {
+    "listing": "/posts-table.html",
+    "items": [
+      "/posts/1gcid/index.html"
+    ]
   }
 ]
