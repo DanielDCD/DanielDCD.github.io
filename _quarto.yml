@@ -14,7 +14,7 @@ website:
     left: 
       - icon: file-earmark-post
         text: Posts
-        href: index.qmd
+        href: posts.qmd
     right:
       - icon: file-person
         text: About
