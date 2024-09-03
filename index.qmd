@@ -19,6 +19,6 @@ Hola. Soy Daniel. Bienvenidos al blog de **Daniel presenta Diversión con Datos*
 
 Un momento *señor D*, ¿qué es el la ciencia de datos?
 
-La ciencia de datos es el estudio de datos con el fin de extraer información de valor de los mismos. Es un enfoque multidisciplinario que combina principios y prácticas del campo de las matemáticas, la estadística, la inteligencia artificial y la ingeniería de computación para analizar grandes cantidades de datos.
+La ciencia de datos es el estudio de datos con el fin de extraer información de valor de ellos. Es un enfoque multidisciplinario que combina principios y prácticas del campo de las matemáticas, la estadística, la inteligencia artificial y la ingeniería de computación para analizar grandes cantidades de datos.
 
 # Posts en castellano
