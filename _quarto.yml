@@ -11,8 +11,14 @@ website:
     type: warning
   title: "Daniel presenta Diversión con Datos"
   navbar:
+    left: 
+      - icon: file-earmark-post
+        text: Posts
+        href: index.qmd
     right:
-      - about.qmd
+      - icon: file-person
+        text: About
+        href: about.qmd
       - icon: github
         href: https://github.com/DanielDCD
   back-to-top-navigation: true
