@@ -4,8 +4,11 @@ about:
   template: jolla
   links:
     - icon: github
-      text: Github
+      text: DanielDCD
       href: https://github.com/DanielDCD
+    - icon: twitter-x
+      text: \@DanielDCD_
+      href: https://x.com/DanielDCD_
 ---
 
 Hola, soy Daniel y soy estudiante de Ciencia e Ingeniería de Datos.
