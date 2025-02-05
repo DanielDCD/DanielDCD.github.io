@@ -1,0 +1,36 @@
+---
+title: "Torture Series - Map 1"
+subtitle: "Stairs of Madness"
+image: https://i.imgur.com/yqva7fF.png
+author: "Lord_Dani"
+date: "2019-01-02"
+categories: [CTM]
+lang: en
+lightbox: true
+---
+
+![](https://i.imgur.com/yqva7fF.png)
+
+::: {.callout-note title="More pictures" collapse="true" appearance="minimal"}
+
+![](https://i.imgur.com/9sZKhon.png)
+
+![](https://i.imgur.com/4QgZ4Ds.png)
+
+:::
+
+# Map information:
+
+**Map type:** Mini-CTM Hardcore
+
+**Minecraft version:** 1.13.2
+
+**Number of Players:** 1 (singleplayer)
+
+**Objetives:** 2 (Mandatory)
+
+**Resource pack:** No
+
+# Download v.0.1(BETA)
+
+[http://www.mediafire.com/file/flzboe3544yjdk6/Stairs_of_Madness.zip/file](http://www.mediafire.com/file/flzboe3544yjdk6/Stairs_of_Madness.zip/file)

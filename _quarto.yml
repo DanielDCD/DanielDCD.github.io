@@ -15,6 +15,12 @@ website:
       - icon: file-earmark-post
         text: Posts
         href: posts.qmd
+      - text: Otros proyectos
+        icon: archive
+        menu:
+          - text: Minecraft maps
+            icon: map
+            href: "other-projects/minecraft-maps.qmd"
     right:
       - icon: file-person
         text: About

@@ -1,0 +1,40 @@
+---
+title: "Torture Series - Map 2"
+subtitle: "Sweet Nightmare"
+image: https://i.imgur.com/bCDJZCv.png
+author: "Lord_Dani"
+date: "2019-08-30"
+categories: [CTM]
+lang: en
+lightbox: true
+---
+
+![](https://i.imgur.com/bCDJZCv.png)
+
+::: {.callout-note title="More pictures" collapse="true" appearance="minimal"}
+
+![](https://i.imgur.com/vAntc3t.png)
+
+![](https://i.imgur.com/tA7ei3O.png)
+
+![](https://i.imgur.com/NvPXNus.png)
+
+![](https://i.imgur.com/nI4v65u.png)
+
+:::
+
+# Map information:
+
+**Map type:** Mini-CTM Hardcore
+
+**Minecraft version:** 1.14.4
+
+**Number of Players:** 1 (singleplayer)
+
+**Objetives:** 3 (Mandatory)
+
+**Resource pack:** Yes
+
+# Download v.0.1(BETA)
+
+[http://www.mediafire.com/file/vzyhmnbg83q310v/Sweet_Nightmare.zip/file](http://www.mediafire.com/file/vzyhmnbg83q310v/Sweet_Nightmare.zip/file)
