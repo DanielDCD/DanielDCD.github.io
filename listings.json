@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/posts-table.html",
     "items": [
       "/posts/1gcid/index.html"
     ]
@@ -12,7 +12,16 @@
     ]
   },
   {
-    "listing": "/posts-table.html",
+    "listing": "/other-projects/minecraft-maps.html",
+    "items": [
+      "/other-projects/minecraft-maps/ts-map4/index.html",
+      "/other-projects/minecraft-maps/ts-map3/index.html",
+      "/other-projects/minecraft-maps/ts-map2/index.html",
+      "/other-projects/minecraft-maps/ts-map1/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
     "items": [
       "/posts/1gcid/index.html"
     ]

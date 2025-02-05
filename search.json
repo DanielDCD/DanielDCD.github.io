@@ -77,18 +77,25 @@
     "text": "Probabilidad\nPara acabar, vamos con la peor asignatura del curso. Según el profesor esta iba a ser una asignatura apasionante. No sé qué definición vio él de la palabra apasionante pero es un verdadero infierno.\nVeamos en qué consiste. En el primer tema se estudian conceptos básicos de probabilidad frecuentista (espacio muestral, sucesos, probabilidades de sucesos, probablidades negadas, probablidad de la unión/intersección de sucesos, sucesos dependientes/independientes, probabilidad total, probabilidad condicionada, teorema de Bayes, etc.). Para ver un ejemplo de esto, imáginemos que lanzamos dos monedas al aire. Los posibles resutlados que nos pueden salir, lo que se llama espacio muestral, son los siguientes (\\(\\text{c}\\) significa cara y \\(\\text{x}\\) cruz): \\(\\Omega = \\{\\text{cc}, \\text{cx}, \\text{xc}, \\text{xx}\\}\\). Podemos calcular la probablidad de sucesos como “sólo sale una cara” de la siguiente manera5:\n5 Como no pueden ocurrir a la vez \\(\\text{xc}\\) y \\(\\text{xc}\\), entonces \\(P(\\text{cx} \\cup \\text{xc}) = 0\\)\\[\n\\begin{split}\nP(\\text{Sólo sale una cara}) = P(\\text{cx} \\cup \\text{xc}) = \\\\ P(\\text{cx}) + P(\\text{xc}) - P(\\text{cx} \\cup \\text{xc}) = 0.25 + 0.25 + 0 = 0.5\n\\end{split}\n\\]\nEl segundo tema es sobre variables aleatorias. Es básicamente una forma más sencilla de trabajar en probabilidad que con sucesos. Esto se entiende mejor con un ejemplo. Supongamos ahora que queremos calcular la probablidiad de que salga un determinado número de caras. Para ello, definiremos una variable aleatoria \\(X \\equiv \\text{Número de caras que salen en los dos lanzamientos}\\). Esta variable puede tomar los siguientes valores:\n\\[\nX = \\begin{cases}\n0 & \\text{si sale cc} \\\\\n1 & \\text{si sale cx o xc} \\\\\n2 & \\text{si sale xx}\n\\end{cases}\n\\]\nPara calcular probablidades, se tiene una función de probablidad:\n\\[\np_X(x) = \\begin{cases}\n0.25 & \\text{si} \\quad x = 0 \\\\\n0.5 & \\text{si} \\quad x = 1 \\\\\n0.25 & \\text{si} \\quad x = 2 \\\\\n0 & \\text{en otro caso}\n\\end{cases}\n\\]\nPor tanto, si queremos calcular la probablidad de que nos salga una sola cara:\n\\[\nP(X = 1) = p_X(1) = 0.5\n\\]\nEste es un caso de variable aleatoria discreta. Se estudian también variables aleatorias continuas y mixtas. De todas ellas se dan conceptos como funciones de probablidad, de densidad, de distribución acumulada, medidas de posición (esperanza, mediana, etc.) y dispersión de variables aleatorias (varianza, desviación típica, etc.), momentos, cambios de variable, entre otros.\nEl tercer tema trata sobre las principales distribuciones de probabilidad, que son por así decirlo variables aleatorias “con nombre propio” para casos habituales. Esto también se entiende mejor con un ejemplo. Continuando con el ejemplo de las monedas, dado que queremos contar el número de veces que sale cara en dos lanzamientos, con una probablidad de 0.5 de que salga cara en uno de ellos, decimos que la variable \\(X\\) sigue una distribución \\(X \\sim \\text{Binomial(n = 2, p = 0.5)}\\), por lo que para calcular la probablidad de que salga exactamente una cara se utiliza la fórmula de función de probablidad de la binomial simplemente sustituyendo \\(n\\) y \\(p\\):\n\\[\n\\begin{split}\nP(X = 1) = \\binom{n}{1} p^1 (1 - p)^{n - 1} = \\binom{2}{1} 0.5^1 (1 - 0.5)^{2 - 1} \\\\ = \\frac{2!}{1!1!} · 0.5 · 0.5 = 2 · 0.5 · 0.5 = 0.5\n\\end{split}\n\\]\nSe dan las principales distribuciones discretas (Uniforme Discreta, Bernoulli, Binomial, Poisson, Geométrica, Hipergeométrica y Binomial negativa) y continuas (Uniforme continua, Normal, Exponencial, Gamma y Weibull), además de las relaciones que hay entre ellas.\nLa distribución más importante de todas es sin lugar a duda la distribución \\(\\text{Normal}(\\mu, \\sigma)\\). Esta es la famosa campana de Gauss (ver Figura 15). En ella la mayoría de los valores tienden a concentrarse alrededor de la media. Un ejemplo de datos que siguen esta distribución es la estatura, ya que la mayoría de las personas suelen tener una estatura similar a la promedio, habiendo muy pocas personas muy bajas o muy altas.\nEsta es con diferencia la distribución que más suele aparecer. Además, exite lo que se conoce como el Teorema Central del Límite que permite, bajo ciertas circunstancias, aproximar otras distribuciones por una normal.\n\n\n\n\n\n\nFigura 15: Campana de Gauss.\n\n\n\nEl cuarto tema trata sobre vectores aleatorios. Básicamente son vectores compuestos por varias variables aleatorias, es decir, del estilo \\(\\mathbf{X} = (X_1, X_2, \\ldots, X_n)\\), por lo que el tema consiste en ver lo mismo pero con varias variables.\nTendría que haber habido un último tema de procesos estocásticos, pero no dió tiempo.\nDurante las sesiones prácticas dimos una pequeña introducción al lenguaje de programación R con el entrono RStudio para hacer pequeñas simultaciones. Un ejemplo se puede ver en el Listado 7.\n\n\n\nListado 7: Programa en R.\n\n\n# EJERCICIO 3:\n\n# Apartado a:\npnorm(1.8, 1.7, .2, lower.tail = FALSE)\n\n# Apartado b:\nqnorm(.1, 1.7, .2, lower.tail = FALSE)\n\n# Apartado c:\nset.seed(2)\nmuestraY &lt;- rnorm(1000, 1.7, .2)^2\nmessage(\"Desviación típica de los datos: \", sd(muestraY))\nplot(ecdf(muestraY))\n\n\n\nLa asignatura en general era bastante difícil llervala al día (sólo había un único examen final de teoría y otro de laboratorio), y encima tardé bastante en apuntarme a una academia por lo que ya iban bastante avanzados, lo que hizo que se me hiciera bastante cuesta arriba.\nA todo esto hay que sumarle todo el tiempo que perdí con un trabajo que nos mandó sobre independencia condicionada. Básicamente el único material que había en internet era o una explicación básica con dibujitos o trabajos de nivel de máster. Por tanto, salió lo que salió y cuando el profesor corrigió tres trabajos decidió dejar de leerlos y poner un suspenso global. A los que dimos la explicación sencilla nos puso un 3 y a los que copiaron lo de nivel de máster les puso un 0. Esto también causó que se cancelara el trabajo del Tema 5 de procesaos estocásticos que en principio estaba planeado.\nLos tres primeros temas de la asignatura son hasta cierto punto asequibles. El problema está en el Tema 4, pues la cosa se complica cuando aparecen varias variables (por ejemplo, las integrales que se ven en temas anteriores pasan a ser integrales múltiples, y eran aún peores que las que dábamos en Cálculo II), además de que el profesor no hacía otra cosa que subir PDFs con más apuntes y teoremas en plena época de exámenes.\nDado que los tres primeros temas están contenidos en el cuarto, al profesor le parecía buena idea simplemente hacer un examen sólo con preguntas del Tema 4, cosa que era completamente inviable, por lo que intentamos convencerle de que no fuera así.\nEl problema está en que habíamos copiado todos los cuestionarios que ponía, y en el cuestionario del Tema 4 la nota media era un 9 y nadie le había preguntado ninguna duda. Por tanto iba a diseñar un examen en consecuencia.\nFinalmente, el exámen teórico fueron 6 puntos del Tema 4 y los otros 4 puntos de preguntas cortas del resto. Como era de esperar el examen fue una hecatombe. Lo único bueno es que no había que sacar una nota mínima para que te haga media por lo que iba con la tranquilidad de que había sacado un 9.4 en el examen de laboratorio, por lo que, sumadas las demás calificaciones, sólo necesitaba poco más de un 2 en el examen de teoría para aprobar. Y así fue. Cuando subió las calificaciones, sólo estaba la nota final de la asginatura y saqué un 5 raspado, que estoy convencido de que fue un 4 con algo que me lo subió por pena."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Daniel presenta Diversión con Datos",
+    "objectID": "posts-table.html",
+    "href": "posts-table.html",
+    "title": "Posts en castellano",
     "section": "",
-    "text": "Bienvenido\nHola. Soy Daniel. Bienvenidos al blog de Daniel presenta Diversión con Datos. En los siguientes posts, ustedes y yo vamos a explorar el dinámico mundo de la ciencia de datos (además de otros campos de la informática, la ciencia y la tecnología).\nUn momento señor D, ¿qué es el la ciencia de datos?\nLa ciencia de datos es el estudio de datos con el fin de extraer información de valor de ellos. Es un enfoque multidisciplinario que combina principios y prácticas del campo de las matemáticas, la estadística, la inteligencia artificial y la ingeniería de computación para analizar grandes cantidades de datos.\n\n\nPosts en castellano\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsí es el primer curso del grado en Ciencia e Ingeniería de Datos\n\n\n\n\n\n\nUniversidad\n\n\nGrado en Ciencia e Ingeniería de Datos\n\n\n\nDescripción de los contenidos que se imparten en el primer curso del grado en Ciencia e Ingeniería de Datos.\n\n\n\n\n\n1 sept 2024\n\n\nDaniel\n\n\n38 minutos\n\n\n7,542 palabras\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
+    "text": "Fecha\n\n\nTítulo\n\n\n\n\n\n\n1 sept 2024\n\n\nAsí es el primer curso del grado en Ciencia e Ingeniería de Datos\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Daniel",
+    "objectID": "other-projects/minecraft-maps/ts-map2/index.html",
+    "href": "other-projects/minecraft-maps/ts-map2/index.html",
+    "title": "Torture Series - Map 2",
     "section": "",
-    "text": "Hola, soy Daniel y soy estudiante de Ciencia e Ingeniería de Datos.\n\n\n Back to top"
+    "text": "More pictures\n\n\n\n\n\n\n\n\n\n\n\n\n\nMap information:\nMap type: Mini-CTM Hardcore\nMinecraft version: 1.14.4\nNumber of Players: 1 (singleplayer)\nObjetives: 3 (Mandatory)\nResource pack: Yes\n\n\nDownload v.0.1(BETA)\nhttp://www.mediafire.com/file/vzyhmnbg83q310v/Sweet_Nightmare.zip/file\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "other-projects/minecraft-maps/ts-map1/index.html",
+    "href": "other-projects/minecraft-maps/ts-map1/index.html",
+    "title": "Torture Series - Map 1",
+    "section": "",
+    "text": "More pictures\n\n\n\n\n\n\n\n\n\n\n\nMap information:\nMap type: Mini-CTM Hardcore\nMinecraft version: 1.13.2\nNumber of Players: 1 (singleplayer)\nObjetives: 2 (Mandatory)\nResource pack: No\n\n\nDownload v.0.1(BETA)\nhttp://www.mediafire.com/file/flzboe3544yjdk6/Stairs_of_Madness.zip/file\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts.html",
@@ -98,10 +105,38 @@
     "text": "Por si le resulta más cómodo, puede visualizar esta lista de posts como una tabla sólo con la fecha y el título.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsí es el primer curso del grado en Ciencia e Ingeniería de Datos\n\n\n\n\n\n\nUniversidad\n\n\nGrado en Ciencia e Ingeniería de Datos\n\n\n\nDescripción de los contenidos que se imparten en el primer curso del grado en Ciencia e Ingeniería de Datos.\n\n\n\n\n\n1 sept 2024\n\n\nDaniel\n\n\n38 minutos\n\n\n7,542 palabras\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
   },
   {
-    "objectID": "posts-table.html",
-    "href": "posts-table.html",
-    "title": "Posts en castellano",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Daniel",
     "section": "",
-    "text": "Fecha\n\n\nTítulo\n\n\n\n\n\n\n1 sept 2024\n\n\nAsí es el primer curso del grado en Ciencia e Ingeniería de Datos\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
+    "text": "Hola, soy Daniel y soy estudiante de Ciencia e Ingeniería de Datos.\n\n\n Back to top"
+  },
+  {
+    "objectID": "other-projects/minecraft-maps.html",
+    "href": "other-projects/minecraft-maps.html",
+    "title": "Minecraft maps",
+    "section": "",
+    "text": "Torture Series - Map 4\n\n\nBullet Hell\n\n\n\nCTM\n\n\n\n\n\n\n\nLord_Dani\n\n\n24 jun 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTorture Series - Map 3\n\n\nUnstable Floor\n\n\n\nCTM\n\n\n\n\n\n\n\nLord_Dani\n\n\n4 ene 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTorture Series - Map 2\n\n\nSweet Nightmare\n\n\n\nCTM\n\n\n\n\n\n\n\nLord_Dani\n\n\n30 ago 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTorture Series - Map 1\n\n\nStairs of Madness\n\n\n\nCTM\n\n\n\n\n\n\n\nLord_Dani\n\n\n2 ene 2019\n\n\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
+  },
+  {
+    "objectID": "other-projects/minecraft-maps/ts-map3/index.html",
+    "href": "other-projects/minecraft-maps/ts-map3/index.html",
+    "title": "Torture Series - Map 3",
+    "section": "",
+    "text": "More pictures\n\n\n\n\n\n\n\n\n\n\nMap information:\nMap type: Mini-CTM Hardcore\nMinecraft version: 1.15.1\nNumber of Players: 1 (singleplayer)\nObjetives: 2 (Mandatory)\nResource pack: no\n\n\nDownload v.0.3(BETA)\n\n\n\nhttp://www.mediafire.com/file/pfyirda8qapmklu/Unstable_floor.zip/file\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "other-projects/minecraft-maps/ts-map4/index.html",
+    "href": "other-projects/minecraft-maps/ts-map4/index.html",
+    "title": "Torture Series - Map 4",
+    "section": "",
+    "text": "More pictures\n\n\n\n\n\n\n\n\n\n\n\n\n\nMap information:\nMap type: Mini-CTM Hardcore\nMinecraft version: 1.15.2\nNumber of Players: 1 (singleplayer)\nObjetives: 2 (Mandatory)\nResource pack: no\n\n\nDownload v.0.1(BETA)\n\n\n\nhttp://www.mediafire.com/file/zvq1d2lcljomzfc/Bullet_hell.zip/file\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Daniel presenta Diversión con Datos",
+    "section": "",
+    "text": "Bienvenido\nHola. Soy Daniel. Bienvenidos al blog de Daniel presenta Diversión con Datos. En los siguientes posts, ustedes y yo vamos a explorar el dinámico mundo de la ciencia de datos (además de otros campos de la informática, la ciencia y la tecnología).\nUn momento señor D, ¿qué es el la ciencia de datos?\nLa ciencia de datos es el estudio de datos con el fin de extraer información de valor de ellos. Es un enfoque multidisciplinario que combina principios y prácticas del campo de las matemáticas, la estadística, la inteligencia artificial y la ingeniería de computación para analizar grandes cantidades de datos.\n\n\nPosts en castellano\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAsí es el primer curso del grado en Ciencia e Ingeniería de Datos\n\n\n\n\n\n\nUniversidad\n\n\nGrado en Ciencia e Ingeniería de Datos\n\n\n\nDescripción de los contenidos que se imparten en el primer curso del grado en Ciencia e Ingeniería de Datos.\n\n\n\n\n\n1 sept 2024\n\n\nDaniel\n\n\n38 minutos\n\n\n7,542 palabras\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
   }
 ]
